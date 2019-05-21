@@ -1,0 +1,205 @@
+.cssmenu_vert ul,
+.cssmenu_vert li,
+.cssmenu_vert span,
+.cssmenu_vert a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-weight: 300;
+}
+.cssmenu_vert {
+  line-height: 1;
+  border-radius: 0px 0px 0 0;
+  -moz-border-radius: 0px 0px 0 0;
+  -webkit-border-radius: 0px 0px 0 0;
+  background: #FFFFFF; /* Old browsers */
+  border-bottom: 0px solid #0fa1e0;
+  width: 100%;
+}
+.cssmenu_vert:after,
+.cssmenu_vert ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.cssmenu_vert a {
+  background: #FFFFFF; /* Old browsers */
+  color: #143664;
+  display: block;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  padding: 10px 20px;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: 1px dashed #D2D2D2;
+}
+.cssmenu_vert ul {
+  list-style: none;
+}
+.cssmenu_vert > ul > li {
+  display: block;
+  margin: 0;
+}
+.cssmenu_vert.align-center {
+  text-align: center;
+}
+.cssmenu_vert.align-center > ul > li {
+  float: none;
+}
+.cssmenu_vert.align-center ul ul {
+  text-align: left;
+}
+.cssmenu_vert.align-right > ul {
+  float: right;
+}
+.cssmenu_vert.align-right ul ul {
+  text-align: right;
+}
+.cssmenu_vert > ul > li > a {
+  color: #143664;
+  font-size: 12px;
+}
+.cssmenu_vert > ul > li:hover:after {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  margin-left: -10px;
+
+}
+.cssmenu_vert > ul > li:first-child > a {
+  border-radius: 0px 0 0 0;
+  -moz-border-radius: 0px 0 0 0;
+  -webkit-border-radius: 0px 0 0 0;
+}
+.cssmenu_vert.align-right > ul > li:first-child > a,
+.cssmenu_vert.align-center > ul > li:first-child > a {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+.cssmenu_vert.align-right > ul > li:last-child > a {
+  border-radius: 0 0px 0 0;
+  -moz-border-radius: 0 0px 0 0;
+  -webkit-border-radius: 0 0px 0 0;
+}
+.cssmenu_vert > ul > li.active > a,
+.cssmenu_vert > ul > li:hover > a {
+  background: #ff3019; /* Old browsers */
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+  color: #ffffff;
+}
+.cssmenu_vert > ul > li.prod > a {
+	color: #ffffff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d02127+0,aa1b30+100 */
+	background: #d02127; /* Old browsers */
+	background: -moz-linear-gradient(top, #d02127 0%, #aa1b30 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #d02127 0%,#aa1b30 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #d02127 0%,#aa1b30 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d02127', endColorstr='#aa1b30',GradientType=0 ); /* IE6-9 */
+}
+
+.cssmenu_vert .has-sub {
+  z-index: 0;
+}
+.cssmenu_vert .has-sub:hover > ul {
+  display: block;
+  
+  animation-name: fadeInOVVC;
+  -webkit-animation-name: fadeInOVVC;	
+
+  animation-duration: 0.5s;	
+  -webkit-animation-duration: 0.5s;
+
+  animation-timing-function: ease-out;	
+  -webkit-animation-timing-function: ease-out;	
+
+  visibility: visible !important;	
+}
+.cssmenu_vert .has-sub ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  left: 0;
+}
+.cssmenu_vert.align-right .has-sub ul {
+  left: auto;
+  right: 0;
+}
+.cssmenu_vert .has-sub ul li {
+  *margin-bottom: -1px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.cssmenu_vert .has-sub ul li a {
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #f0eff0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#f0eff0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%,#f0eff0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0eff0',GradientType=0 ); /* IE6-9 */
+  border-bottom: 0px solid #31b7f1;
+  font-size: 11px;
+  filter: none;
+  display: block;
+  line-height: 120%;
+  padding: 10px;
+  color: #133765;
+}
+.cssmenu_vert .has-sub ul li:hover a {
+  background: #fb9d04; /* Old browsers */
+  background: -moz-linear-gradient(top, #fb9d04 0%, #ff7d22 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fb9d04 0%,#ff7d22 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fb9d04 0%,#ff7d22 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb9d04', endColorstr='#ff7d22',GradientType=0 ); /* IE6-9 */
+}
+.cssmenu_vert ul ul li:hover > a {
+  color: #ffffff;
+}
+.cssmenu_vert .has-sub .has-sub:hover > ul {
+  display: block;
+}
+.cssmenu_vert .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.cssmenu_vert.align-right .has-sub .has-sub ul,
+.cssmenu_vert.align-right ul ul ul {
+  left: auto;
+  right: 100%;
+}
+.cssmenu_vert .has-sub .has-sub ul li a {
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #f0eff0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#f0eff0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%,#f0eff0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0eff0',GradientType=0 ); /* IE6-9 */
+  border-bottom: 0px solid #31b7f1;
+}
+.cssmenu_vert .has-sub .has-sub ul li a:hover {
+  background: #0a6d98;
+}
+.cssmenu_vert ul ul li.last > a,
+.cssmenu_vert ul ul li:last-child > a,
+.cssmenu_vert ul ul ul li.last > a,
+.cssmenu_vert ul ul ul li:last-child > a,
+.cssmenu_vert .has-sub ul li:last-child > a,
+.cssmenu_vert .has-sub ul li.last > a {
+  border-bottom: 0;
+}
+
+@media screen and (max-width:800px ) {
+	.cssmenu_vert > ul > li {
+		display: block;
+		float: none;
+		margin: 0;
+	}
+}

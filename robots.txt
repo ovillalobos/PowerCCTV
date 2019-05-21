@@ -1,0 +1,9 @@
+User-agent: *
+#global
+Disallow: /docs/
+Disallow: /down/
+Disallow: /fonts/
+Disallow: /include/
+Disallow: /phpmailer/
+
+Sitemap: http://www.powercctv.com/sitemap.xml
